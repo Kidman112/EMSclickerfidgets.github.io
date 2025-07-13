@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Layout Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f8ff; /* light background */
+    }
+
+    .left-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .button {
+      background-color: lightblue;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+
+    .button:hover {
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="left-buttons">
+      <a href="#email" class="button">Email Us</a>
+      <a href="#store" class="button">Store</a>
+    </div>
+    <a href="#login" class="button">Login</a>
+  </div>
+
+</body>
+</html>
