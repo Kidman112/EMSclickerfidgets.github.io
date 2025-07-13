@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Clicker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: lightblue;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Verification</h1>
+
+  <form>
+    <label for="lunch">What lunch do you have?</label>
+    <input type="text" id="lunch" name="lunch" required>
+
+    <label for="mascot">What is the mascot of EMS?</label>
+    <input type="text" id="mascot" name="mascot" required>
+
+    <label for="grade">What grade are you in?</label>
+    <input type="text" id="grade" name="grade" required>
+
+    <label for="email">What is your email?</label>
+    <input type="email" id="email" name="email" required>
+
+    <hr>
+
+    <h2>Which Clicker Do You Want?</h2>
+
+    <label for="clicker">Choose a clicker:</label>
+    <select id="clicker" name="clicker" required>
+      <option value="">-- Select a Clicker --</option>
+      <option value="2x2">2 by 2</option>
+      <option value="4x4">4 by 4</option>
+      <option value="5x5">5 by 5</option>
+      <option value="custom">Custom Clicker</option>
+    </select>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+</body>
+</html>
